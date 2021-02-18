@@ -1,0 +1,73 @@
+mixin sFiles(data)
+	// start sFiles
+	+b.sFiles&attributes(attributes)
+		+e.UL.nav
+			+e.LI.item 
+				+e.link(href="#").active Все
+				
+			+e.LI.item 
+				+e.link(href="#") Выполнены
+			+e.LI.item 
+				+e.link(href="#") В работе
+			+e.LI.item 
+				+e.link(href="#") Ошибка
+
+		.container-fluid
+			table 
+				tr 
+					th Дата и время 
+					th Название файла
+					th Статус
+					th
+				mixin tr()
+					tr 
+						td 16.05.2021 в 21:00
+						td Avtomaticheskoe_nazvanie_16_05_21_21_00.xls
+						block
+				+tr()
+					td
+						.text-success Выполнено
+					td
+						a.link-download(href="#")
+							+icon('download')
+							| Скачать 
+				+tr()
+					td
+						.text-light В работе
+					td
+						.progress(style='height: 8px;')
+							.progress-bar(role='progressbar' style='width: 25%;' aria-valuenow='25' aria-valuemin='0' aria-valuemax='100')
+				+tr()
+					td
+						.text-danger Ошибка
+					td 
+				+tr()
+					td
+						.text-success Выполнено
+					td
+						a.link-download(href="#")
+							+icon('download')
+							| Скачать 
+				+tr()
+					td
+						.text-light В работе
+					td
+						.progress(style='height: 8px;')
+							.progress-bar(role='progressbar' style='width: 80%;' aria-valuenow='80' aria-valuemin='0' aria-valuemax='100')
+				+tr()
+					td
+						.text-light В работе
+					td
+						.progress(style='height: 8px;')
+							.progress-bar(role='progressbar' style='width: 10%;' aria-valuenow='10' aria-valuemin='0' aria-valuemax='100')
+				+tr()
+					td
+						.text-danger Ошибка
+					td 
+				+tr()
+					td
+						.text-danger Ошибка
+					td 
+
+	// end sFiles
+
