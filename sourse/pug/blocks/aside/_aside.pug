@@ -6,24 +6,28 @@ mixin aside(data)
 				+pic("logo.png",'',0)
 		+e.LI.item
 			+e.A.link(href="#")
-				+e.DIV.title Парсинг
-				+e.DIV.text 
+				+e.DIV.title Парсинг 
+				+icon('chevron-right')
 		+e.LI.item
 			+e.A.link(href="#").active
 				+e.DIV.text Проверка
 				+e.DIV.title Akeno
+				+icon('chevron-right')
 		+e.LI.item
 			+e.A.link(href="#")
 				+e.DIV.text Проверка цен
 
 				+e.DIV.title RP, RRP,  future RRP 
+				+icon('chevron-right')
 		+e.LI.item
 			+e.A.link(href="#")
 				+e.DIV.text Проверка цен
 				+e.DIV.title Web Shop RP
+				+icon('chevron-right')
 		+e.LI.item
 			+e.A.link(href="#")
 				+e.DIV.text Проверка
 				+e.DIV.title Picture pool
+				+icon('chevron-right')
 
 	// end aside
