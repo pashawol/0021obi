@@ -1,0 +1,29 @@
+mixin aside(data)
+	// start aside
+	+b.UL.aside&attributes(attributes)
+		+e.LI.item
+			+e.A.link--logo(href="#")
+				+pic("logo.png",'',0)
+		+e.LI.item
+			+e.A.link(href="#")
+				+e.DIV.title Парсинг
+				+e.DIV.text 
+		+e.LI.item
+			+e.A.link(href="#").active
+				+e.DIV.text Проверка
+				+e.DIV.title Akeno
+		+e.LI.item
+			+e.A.link(href="#")
+				+e.DIV.text Проверка цен
+
+				+e.DIV.title RP, RRP,  future RRP 
+		+e.LI.item
+			+e.A.link(href="#")
+				+e.DIV.text Проверка цен
+				+e.DIV.title Web Shop RP
+		+e.LI.item
+			+e.A.link(href="#")
+				+e.DIV.text Проверка
+				+e.DIV.title Picture pool
+
+	// end aside

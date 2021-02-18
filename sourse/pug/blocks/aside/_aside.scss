@@ -1,0 +1,73 @@
+
+	// start .aside
+	.aside {
+		width: rem(208);
+		list-style: none;
+		&__link{
+			width: rem(176px);
+			height: rem(96px); 
+			background: #FFFFFF;
+			border-radius: rem(4px);
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			margin-bottom: rem(21);
+			padding-left: rem(24);
+			color: $body-color;
+			position: relative;
+			z-index: 2;
+			&::before{
+				content: '';
+				position: absolute;
+				top: 0;
+				height: 100%;
+				background-color: $primary;
+				width: rem(24 + 12);
+				opacity: 0;
+				left: 0;
+				@include mt;
+				z-index: -1;
+			}
+			&.active,
+			&:hover{
+				color: #fff;
+				background-color: $primary;
+				&::before{
+					opacity: 1;
+					left: calc(100% - #{rem(4px)});
+				}
+			}
+			&--logo{
+				background-color: #fff !important;
+				height: rem(88);
+				align-items: center;
+				padding: 0;
+				&::before{
+					display: none;
+				}
+			}
+		}
+		&__text{
+			font-size: rem(12);
+			font-weight: 300;
+		}
+		&__title{
+			font-weight: bold;
+			max-width: rem(85);
+			line-height: (19 / 16);
+		}
+		// --sPT: ;
+		// --sPB: ;
+		// --sTPB: ;
+		 
+	@include media-breakpoint-up(xl) {}
+	@include media-breakpoint-up(lg) {}
+	@include media-breakpoint-up(md) {}
+	@include media-breakpoint-up(sm) {}
+	//
+	@include media-breakpoint-between(md, xl) { }
+	//
+	@include media-breakpoint-only(xl) {}
+	//
+	@include media-breakpoint-down(xl) {}
+} // end.aside
