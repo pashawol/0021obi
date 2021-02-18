@@ -5,14 +5,25 @@ mixin topLine(t)
 			.row
 				.col.align-self-center
 					h1= t
-				.col-auto
+				+e.col--center.col-auto
 					.row
 						.col-6
-							div.strong
+							+e.files.strong
 								+icon('file')
 								| Файлы
 							div 
-						.col-6
-				.col-auto
+								+e.SPAN.count  12 560
+								a.smallest(href="#") Перейти
+						.col-6.smallest
+							.row.g-1
+								.col Выполнено:
+								.col-auto.fw-500 1250
+							.row.g-1
+								.col Ожидает
+								.col-auto.fw-500 455
+							.row.g-1
+								.col Ошибка
+								.col-auto.fw-500.text-danger 12
+				+e.col.col-auto
 					+e.btn(href="#") Обновить базу
 	// end topLine

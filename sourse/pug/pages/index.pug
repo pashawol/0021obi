@@ -3,6 +3,7 @@ extends layout/main.pug
 
 include ../blocks/sContent/_sContent.pug
 include ../blocks/aside/_aside.pug
+include ../blocks/sParsing/_sParsing.pug
 
 block variables
 	- let  mainPage= null
@@ -14,3 +15,5 @@ block pagecontent
 	+aside
 	main.main-block
 		+topLine(title)
+		
+		+sParsing

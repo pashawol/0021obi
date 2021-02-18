@@ -471,8 +471,14 @@ iframe {
 }
 
 .btn{
+	min-width: rem(144);
+}
+.btn{
 	font-weight: bold;
 	
+}
+.btn-primary{
+	color: #fff !important;
 }
 .btn-outline-primary{
 	color: $body-color;

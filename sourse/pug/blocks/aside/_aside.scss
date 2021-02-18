@@ -2,6 +2,7 @@
 	// start .aside
 	.aside {
 		width: rem(208);
+		flex: 0 0 auto;
 		list-style: none;
 		&__link{
 			width: rem(176px);

@@ -16,8 +16,38 @@
 		}
 	 
 		.col-auto{
+			
+		}
+		&__col--center{
+			width: rem(352);
+			display: flex;
+			align-items: center;
+			.row{
+				flex-grow: 1;
+			}
+			
+		}
+		&__col{
 			border-left: 1px solid #D9DADA;
+		}
+		&__count{
+			display: inline-block;
+			font-weight: bold;
+			color: $primary;
+		}
+		&__files{
+			display: flex;
+			align-items: center;
+			.icon{
+				color: $primary;
+				font-size: 1rem;
+				margin-right: rem(8);
 
+
+			}
+		}
+		&__count{
+			margin-right: rem(7);
 		}
 	@include media-breakpoint-up(xl) {}
 	@include media-breakpoint-up(lg) {}
@@ -44,3 +74,8 @@
 	@include media-breakpoint-down(xs) {} 
 
 } // end.topLine
+
+
+.smallest{
+	font-size: 12px;
+}

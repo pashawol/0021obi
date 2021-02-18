@@ -1,0 +1,25 @@
+
+	// start .sParsing
+	.sParsing {
+		// --sPT: ;
+		// --sPB: ;
+		// --sTPB: ;
+		padding-top: rem(24);
+		&__input-wrap{
+			margin-bottom: rem(30);
+		}
+		&__input{
+			height: rem(248);
+		}
+		 
+	@include media-breakpoint-up(xl) {}
+	@include media-breakpoint-up(lg) {}
+	@include media-breakpoint-up(md) {}
+	@include media-breakpoint-up(sm) {}
+	//
+	@include media-breakpoint-between(md, xl) { }
+	//
+	@include media-breakpoint-only(xl) {}
+	//
+	@include media-breakpoint-down(xl) {}
+} // end.sParsing

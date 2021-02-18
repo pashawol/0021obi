@@ -62,25 +62,182 @@
 							<div class="col align-self-center">
 								<h1>Парсинг товаров</h1>
 							</div>
-							<div class="col-auto">
+							<div class="topLine__col topLine__col--center col-auto">
 								<div class="row">
 									<div class="col-6">
-										<div class="strong">
+										<div class="topLine__files strong">
 											<svg class="icon icon-file ">
 												<use xlink:href="img/svg/sprite.svg#file"></use>
 											</svg>Файлы
 										</div>
-										<div> </div>
+										<div> <span class="topLine__count"> 12 560</span><a class="smallest" href="#">Перейти</a>
+										</div>
 									</div>
-									<div class="col-6"></div>
+									<div class="col-6 smallest">
+										<div class="row g-1">
+											<div class="col">Выполнено:</div>
+											<div class="col-auto fw-500">1250</div>
+										</div>
+										<div class="row g-1">
+											<div class="col">Ожидает</div>
+											<div class="col-auto fw-500">455</div>
+										</div>
+										<div class="row g-1">
+											<div class="col">Ошибка</div>
+											<div class="col-auto fw-500 text-danger">12</div>
+										</div>
+									</div>
 								</div>
 							</div>
-							<div class="col-auto"><a class="topLine__btn" href="#">Обновить базу</a>
+							<div class="topLine__col col-auto"><a class="topLine__btn" href="#">Обновить базу</a>
 							</div>
 						</div>
 					</div>
 				</div>
 				<!-- end topLine-->
+				<!-- start sParsing-->
+				<div class="sParsing">
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-6">
+								<div class="strong mb-2">Укажите SKU товаров через запятую</div>
+								<div class="sParsing__input-wrap form-group"><textarea class="sParsing__input form-control" name="textarea" placeholder=""></textarea>
+								</div>
+								<!-- +e.input-wrap-->
+								<div class="strong mb-2">Выберите магазины  </div>
+								<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="checkbox" type="checkbox"/><span class="custom-input__text form-check-label">ОБИ Филион</span>
+								</label>
+								<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="checkbox" type="checkbox"/><span class="custom-input__text form-check-label">ОБИ Ходынское Поле </span>
+								</label>
+								<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="checkbox" type="checkbox"/><span class="custom-input__text form-check-label">ОБИ Варшавское  </span>
+								</label>
+								<button class="btn btn-primary mt-4">Начать</button>
+							</div>
+							<div class="col-6">
+								<div class="strong mb-2">Выберите магазины</div>
+								<div class="row">
+													<div class="col-6">
+														<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="checkbox" type="checkbox"/><span class="custom-input__text form-check-label">ОБИ Филион</span>
+														</label>
+													</div>
+													<div class="col-6">
+														<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="checkbox" type="checkbox"/><span class="custom-input__text form-check-label">ОБИ Ходынское Поле </span>
+														</label>
+													</div>
+													<div class="col-6">
+														<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="checkbox" type="checkbox"/><span class="custom-input__text form-check-label">ОБИ Варшавское  </span>
+														</label>
+													</div>
+													<div class="col-6">
+														<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="checkbox" type="checkbox"/><span class="custom-input__text form-check-label">ОБИ Боровское  </span>
+														</label>
+													</div>
+													<div class="col-6">
+														<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="checkbox" type="checkbox"/><span class="custom-input__text form-check-label">ОБИ Белая Дача  </span>
+														</label>
+													</div>
+													<div class="col-6">
+														<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="checkbox" type="checkbox"/><span class="custom-input__text form-check-label">ОБИ Теплый Стан  </span>
+														</label>
+													</div>
+													<div class="col-6">
+														<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="checkbox" type="checkbox"/><span class="custom-input__text form-check-label">ОБИ Новая Рига </span>
+														</label>
+													</div>
+													<div class="col-6">
+														<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="checkbox" type="checkbox"/><span class="custom-input__text form-check-label">ОБИ Митино  </span>
+														</label>
+													</div>
+													<div class="col-6">
+														<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="checkbox" type="checkbox"/><span class="custom-input__text form-check-label">ОБИ Химки</span>
+														</label>
+													</div>
+													<div class="col-6">
+														<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="checkbox" type="checkbox"/><span class="custom-input__text form-check-label">ОБИ Литвиново</span>
+														</label>
+													</div>
+													<div class="col-6">
+														<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="checkbox" type="checkbox"/><span class="custom-input__text form-check-label">OBI Fedyakovo </span>
+														</label>
+													</div>
+													<div class="col-6">
+														<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="checkbox" type="checkbox"/><span class="custom-input__text form-check-label">OBI Metallurgov</span>
+														</label>
+													</div>
+													<div class="col-6">
+														<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="checkbox" type="checkbox"/><span class="custom-input__text form-check-label">014 OBI Dybenko  </span>
+														</label>
+													</div>
+													<div class="col-6">
+														<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="checkbox" type="checkbox"/><span class="custom-input__text form-check-label">015 OBI Parnas  </span>
+														</label>
+													</div>
+													<div class="col-6">
+														<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="checkbox" type="checkbox"/><span class="custom-input__text form-check-label">016 OBI Lakhta</span>
+														</label>
+													</div>
+													<div class="col-6">
+														<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="checkbox" type="checkbox"/><span class="custom-input__text form-check-label">017 OBI Rodionova</span>
+														</label>
+													</div>
+													<div class="col-6">
+														<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="checkbox" type="checkbox"/><span class="custom-input__text form-check-label">019 OBI Karnaval </span>
+														</label>
+													</div>
+													<div class="col-6">
+														<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="checkbox" type="checkbox"/><span class="custom-input__text form-check-label">023 OBI Volgograd</span>
+														</label>
+													</div>
+													<div class="col-6">
+														<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="checkbox" type="checkbox"/><span class="custom-input__text form-check-label">029 OBI Omsk</span>
+														</label>
+													</div>
+													<div class="col-6">
+														<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="checkbox" type="checkbox"/><span class="custom-input__text form-check-label">030 OBI Krasnodar</span>
+														</label>
+													</div>
+													<div class="col-6">
+														<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="checkbox" type="checkbox"/><span class="custom-input__text form-check-label">033 OBI Ryazan </span>
+														</label>
+													</div>
+													<div class="col-6">
+														<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="checkbox" type="checkbox"/><span class="custom-input__text form-check-label">034 OBI Saratov </span>
+														</label>
+													</div>
+													<div class="col-6">
+														<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="checkbox" type="checkbox"/><span class="custom-input__text form-check-label">036 OBI Surgut </span>
+														</label>
+													</div>
+													<div class="col-6">
+														<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="checkbox" type="checkbox"/><span class="custom-input__text form-check-label">042 OBI Bryansk </span>
+														</label>
+													</div>
+													<div class="col-6">
+														<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="checkbox" type="checkbox"/><span class="custom-input__text form-check-label">043 OBI Tula </span>
+														</label>
+													</div>
+													<div class="col-6">
+														<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="checkbox" type="checkbox"/><span class="custom-input__text form-check-label">044 OBI Volzhsky  </span>
+														</label>
+													</div>
+													<div class="col-6">
+														<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="checkbox" type="checkbox"/><span class="custom-input__text form-check-label">008 OBI Kazan  </span>
+														</label>
+													</div>
+													<div class="col-6">
+														<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="checkbox" type="checkbox"/><span class="custom-input__text form-check-label">005 OBI Kosmonavtov  </span>
+														</label>
+													</div>
+													<div class="col-6">
+														<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="checkbox" type="checkbox"/><span class="custom-input__text form-check-label">007 OBI Pulkovskoe  </span>
+														</label>
+													</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- end sParsing-->
 			</main>
 		</div>
 		<script src="libs/loading-attribute-polyfill/loading-attribute-polyfill.min.js"></script>
