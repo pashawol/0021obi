@@ -1,0 +1,80 @@
+
+	// start .sCheck
+	.sCheck {
+		--sPT: 65px;
+		--sPB: 65px;
+		// --sTPB: ;
+		
+		&__content {
+			padding-left: rem(100);
+		}
+
+		&__heading {
+			color: $primary;
+			font-weight: bold;
+			font-size: rem(24);
+			line-height: 120%;
+			letter-spacing: -0.03em;
+			margin-bottom: rem(10);
+		}
+		
+		&__text {
+			position: relative;	
+			font-size: rem(16);
+			line-height: 141.5%;
+			letter-spacing: -0.03em;
+			margin-bottom: rem(24);
+			width: rem(250);
+			&::after {
+				content: '';
+				position: absolute;
+				width: rem(118);
+				height: rem(90);
+				background-image: url(../img/@2x/arrow-dashed.png);
+				background-position: center center;
+				background-size: contain;
+				background-repeat: no-repeat;
+				top: -75px;
+				right: -120px;
+			}
+		}
+
+		&__progress {
+			display: flex;
+			align-items: center;
+		}
+
+		&__percent {
+			font-weight: 750;
+			font-size: rem(12);
+			line-height: 120%;
+			letter-spacing: -0.03em;
+		}
+
+		.progress {
+			width: rem(164);
+			margin-right: rem(12);
+		}
+
+		&__img {
+			padding-top: rem(85);
+			
+			@include media-breakpoint-down(xl) {
+				padding-top: rem(55);
+			}
+			svg {
+				max-width: 100%;
+			}
+		}
+		 
+	@include media-breakpoint-up(xl) {}
+	@include media-breakpoint-up(lg) {}
+	@include media-breakpoint-up(md) {}
+	@include media-breakpoint-up(sm) {}
+	//
+	@include media-breakpoint-between(md, xl) { }
+	//
+	@include media-breakpoint-only(xl) {}
+	//
+	@include media-breakpoint-down(xl) {}
+} // end.sCheck

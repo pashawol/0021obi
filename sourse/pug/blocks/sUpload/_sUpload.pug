@@ -1,0 +1,24 @@
+mixin sUpload(data)
+	// start sUpload
+	+b.sUpload&attributes(attributes)
+		.container-fluid
+			+b.section-title.text-center.d-none
+				h2 Проверка цен RP, RRP, future RRP
+			+e.title Выберите файл для загрузки
+			+b.add-file
+				.row
+					.col-6
+						label
+							+e.INPUT.input(name='file', type='file')
+							+e.SPAN.btn + Выбрать файл
+						button.btn.btn-primary Начать
+					.col-6
+						+e.text.alert.alert-success.alert-dismissible(role='alert') 
+							span nazvanie_16_05_21_21_00.xls nazvanie_16_05_21_21_00.xls
+							button.btn.btn-close(type='button', data-bs-dismiss='alert', aria-label='Close')
+						+e.text.alert.alert-secondary(role='alert')
+							|Файл не выбран
+						+e.text.alert.alert-danger(role='alert')
+							span.text-danger.me-2 ! 
+							| Ошибка загрузки файла
+	// end sUpload
