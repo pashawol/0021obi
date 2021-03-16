@@ -1,0 +1,48 @@
+mixin sSettings(data)
+	// start sSettings
+	+b.sSettings&attributes(attributes)
+		.container-fluid
+			.row
+				.col-6
+					.strong.mb-2 Введите адрес электронной почты
+					+input("",'email')
+					button.btn.btn-primary.mt-4 Добавить
+				.col-6
+					.strong.mb-2 Выберите тип отчета
+					+in-c("checkbox",'Выбрать все')(checked)
+					.row
+						mixin ch(t)
+							.col-6
+								+in-c("checkbox",t)
+						+ch(" Проверка Akeno")
+						+ch("Проверка Web Shop RP ")
+						+ch(" Проверка PR, PPR")
+						+ch(" Проверка future PPR")
+						+ch("Проверка Picture Pool ")
+		table 
+			thead 
+				tr 
+					th 
+					th Akeno
+					th PR, PPR
+					th future PPR
+					th Web Shop RP
+					th Picture Pool
+					th Удалить
+			tbody 
+				- for (var x = 0; x < 10; x++)
+					tr 
+						td sample@sample.com
+						td 
+							+in-c()(checked)
+						td 
+							+in-c()
+						td 
+							+in-c()(checked)
+						td 
+							+in-c()
+						td 
+							+in-c()
+						td 
+							+icon('close')
+	// end sSettings

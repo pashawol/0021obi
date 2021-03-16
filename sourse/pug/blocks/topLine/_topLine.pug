@@ -17,7 +17,9 @@ mixin topLine(t)
 						.col-6.smallest
 							.row.g-1
 								.col Выполнено:
-								.col-auto.fw-500 1250
+								.col-auto.fw-500
+									span.badge.bg-primary.mx-1 +1 
+									| 1250
 							.row.g-1
 								.col Ожидает
 								.col-auto.fw-500 455
@@ -26,4 +28,7 @@ mixin topLine(t)
 								.col-auto.fw-500.text-danger 12
 				+e.col.col-auto
 					+e.btn(href="#") Обновить базу
+				+e.btn-setting.active(href="#") 
+					+icon("settings")
+				//- +e.col.col-auto.px-0
 	// end topLine

@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<title>Проверка цен RP, RRP, future RRP</title>
+		<meta name="description" content="о чем страница">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<link type="image/ico" href="img/favicon.ico" rel="shortcut icon"><meta name="format-detection" content="telephone=no"> 
+		<link href="css/main.min.css" rel="stylesheet"/>
+	</head>
+	<body> 
+		<div class="main-wrapper">
+			<!-- start aside-->
+			<ul class="aside">
+				<li class="aside__item"><a class="aside__link aside__link--logo" href="#">
+					<!-- picture-->
+					<picture> 
+						<noscript class="loading-lazy">
+							<source type="image/webp" srcset="img/@2x/webp/logo.webp"/><img src="img/@2x/logo.png" alt="" loading="lazy"/>
+						</noscript>
+					</picture>
+					<!-- /picture--></a>
+				</li>
+				<li class="aside__item"><a class="aside__link" href="#">
+					<div class="aside__title">Парсинг 
+					</div>
+					<svg class="icon icon-chevron-right ">
+						<use xlink:href="img/svg/sprite.svg#chevron-right"></use>
+					</svg></a>
+				</li>
+				<li class="aside__item"><a class="aside__link active" href="#">
+					<div class="aside__text">Проверка
+					</div>
+					<div class="aside__title">Akeno
+					</div>
+					<svg class="icon icon-chevron-right ">
+						<use xlink:href="img/svg/sprite.svg#chevron-right"></use>
+					</svg></a>
+				</li>
+				<li class="aside__item"><a class="aside__link" href="#">
+					<div class="aside__text">Проверка цен
+					</div>
+					<div class="aside__title">RP, RRP,  future RRP 
+					</div>
+					<svg class="icon icon-chevron-right ">
+						<use xlink:href="img/svg/sprite.svg#chevron-right"></use>
+					</svg></a>
+				</li>
+				<li class="aside__item"><a class="aside__link" href="#">
+					<div class="aside__text">Проверка цен
+					</div>
+					<div class="aside__title">Web Shop RP
+					</div>
+					<svg class="icon icon-chevron-right ">
+						<use xlink:href="img/svg/sprite.svg#chevron-right"></use>
+					</svg></a>
+				</li>
+				<li class="aside__item"><a class="aside__link" href="#">
+					<div class="aside__text">Проверка
+					</div>
+					<div class="aside__title">Picture pool
+					</div>
+					<svg class="icon icon-chevron-right ">
+						<use xlink:href="img/svg/sprite.svg#chevron-right"></use>
+					</svg></a>
+				</li>
+			</ul>
+			<!-- end aside-->
+			<main class="main-block">
+				<!-- start topLine-->
+				<div class="topLine" id="topLine">
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col align-self-center">
+								<h1>Проверка цен RP, RRP, future RRP</h1>
+							</div>
+							<div class="topLine__col topLine__col--center col-auto">
+								<div class="row">
+									<div class="col-6">
+										<div class="topLine__files strong">
+											<svg class="icon icon-file ">
+												<use xlink:href="img/svg/sprite.svg#file"></use>
+											</svg>Файлы
+										</div>
+										<div> <span class="topLine__count"> 12 560</span><a class="smallest" href="#">Перейти</a>
+										</div>
+									</div>
+									<div class="col-6 smallest">
+										<div class="row g-1">
+											<div class="col">Выполнено:</div>
+											<div class="col-auto fw-500"><span class="badge bg-primary mx-1">+1 </span>1250</div>
+										</div>
+										<div class="row g-1">
+											<div class="col">Ожидает</div>
+											<div class="col-auto fw-500">455</div>
+										</div>
+										<div class="row g-1">
+											<div class="col">Ошибка</div>
+											<div class="col-auto fw-500 text-danger">12</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="topLine__col col-auto"><a class="topLine__btn" href="#">Обновить базу</a>
+							</div><a class="topLine__btn-setting active" href="#"> 
+							<svg class="icon icon-settings ">
+								<use xlink:href="img/svg/sprite.svg#settings"></use>
+							</svg></a>
+						</div>
+					</div>
+				</div>
+				<!-- end topLine-->
+				<!-- start sSettings-->
+				<div class="sSettings">
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-6">
+								<div class="strong mb-2">Введите адрес электронной почты</div>
+								<div class="sSettings__input-wrap form-group"><input class="sSettings__input form-control" name="email" type="email" placeholder=""/>
+								</div>
+								<!-- +e.input-wrap-->
+								<button class="btn btn-primary mt-4">Добавить</button>
+							</div>
+							<div class="col-6">
+								<div class="strong mb-2">Выберите тип отчета</div>
+								<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="checkbox" type="checkbox" checked="checked"/><span class="custom-input__text form-check-label">Выбрать все</span>
+								</label>
+								<div class="row">
+													<div class="col-6">
+														<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="checkbox" type="checkbox"/><span class="custom-input__text form-check-label"> Проверка Akeno</span>
+														</label>
+													</div>
+													<div class="col-6">
+														<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="checkbox" type="checkbox"/><span class="custom-input__text form-check-label">Проверка Web Shop RP </span>
+														</label>
+													</div>
+													<div class="col-6">
+														<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="checkbox" type="checkbox"/><span class="custom-input__text form-check-label"> Проверка PR, PPR</span>
+														</label>
+													</div>
+													<div class="col-6">
+														<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="checkbox" type="checkbox"/><span class="custom-input__text form-check-label"> Проверка future PPR</span>
+														</label>
+													</div>
+													<div class="col-6">
+														<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="checkbox" type="checkbox"/><span class="custom-input__text form-check-label">Проверка Picture Pool </span>
+														</label>
+													</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<table> 
+						<thead> 
+							<tr> 
+								<th> </th>
+								<th>Akeno</th>
+								<th>PR, PPR</th>
+								<th>future PPR</th>
+								<th>Web Shop RP</th>
+								<th>Picture Pool</th>
+								<th>Удалить</th>
+							</tr>
+						</thead>
+						<tbody> 
+							<tr> 
+								<td>sample@sample.com</td>
+								<td> 
+									<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="checkbox" type="checkbox" checked="checked"/>
+									</label>
+								</td>
+								<td> 
+									<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="checkbox" type="checkbox"/>
+									</label>
+								</td>
+								<td> 
+									<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="checkbox" type="checkbox" checked="checked"/>
+									</label>
+								</td>
+								<td> 
+									<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="checkbox" type="checkbox"/>
+									</label>
+								</td>
+								<td> 
+									<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="checkbox" type="checkbox"/>
+									</label>
+								</td>
+								<td> 
+									<svg class="icon icon-close ">
+										<use xlink:href="img/svg/sprite.svg#close"></use>
+									</svg>
+								</td>
+							</tr>
+							<tr> 
+								<td>sample@sample.com</td>
+								<td> 
+									<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="checkbox" type="checkbox" checked="checked"/>
+									</label>
+								</td>
+								<td> 
+									<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="checkbox" type="checkbox"/>
+									</label>
+								</td>
+								<td> 
+									<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="checkbox" type="checkbox" checked="checked"/>
+									</label>
+								</td>
+								<td> 
+									<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="checkbox" type="checkbox"/>
+									</label>
+								</td>
+								<td> 
+									<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="checkbox" type="checkbox"/>
+									</label>
+								</td>
+								<td> 
+									<svg class="icon icon-close ">
+										<use xlink:href="img/svg/sprite.svg#close"></use>
+									</svg>
+								</td>
+							</tr>
+							<tr> 
+								<td>sample@sample.com</td>
+								<td> 
+									<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="checkbox" type="checkbox" checked="checked"/>
+									</label>
+								</td>
+								<td> 
+									<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="checkbox" type="checkbox"/>
+									</label>
+								</td>
+								<td> 
+									<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="checkbox" type="checkbox" checked="checked"/>
+									</label>
+								</td>
+								<td> 
+									<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="checkbox" type="checkbox"/>
+									</label>
+								</td>
+								<td> 
+									<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="checkbox" type="checkbox"/>
+									</label>
+								</td>
+								<td> 
+									<svg class="icon icon-close ">
+										<use xlink:href="img/svg/sprite.svg#close"></use>
+									</svg>
+								</td>
+							</tr>
+							<tr> 
+								<td>sample@sample.com</td>
+								<td> 
+									<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="checkbox" type="checkbox" checked="checked"/>
+									</label>
+								</td>
+								<td> 
+									<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="checkbox" type="checkbox"/>
+									</label>
+								</td>
+								<td> 
+									<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="checkbox" type="checkbox" checked="checked"/>
+									</label>
+								</td>
+								<td> 
+									<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="checkbox" type="checkbox"/>
+									</label>
+								</td>
+								<td> 
+									<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="checkbox" type="checkbox"/>
+									</label>
+								</td>
+								<td> 
+									<svg class="icon icon-close ">
+										<use xlink:href="img/svg/sprite.svg#close"></use>
+									</svg>
+								</td>
+							</tr>
+							<tr> 
+								<td>sample@sample.com</td>
+								<td> 
+									<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="checkbox" type="checkbox" checked="checked"/>
+									</label>
+								</td>
+								<td> 
+									<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="checkbox" type="checkbox"/>
+									</label>
+								</td>
+								<td> 
+									<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="checkbox" type="checkbox" checked="checked"/>
+									</label>
+								</td>
+								<td> 
+									<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="checkbox" type="checkbox"/>
+									</label>
+								</td>
+								<td> 
+									<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="checkbox" type="checkbox"/>
+									</label>
+								</td>
+								<td> 
+									<svg class="icon icon-close ">
+										<use xlink:href="img/svg/sprite.svg#close"></use>
+									</svg>
+								</td>
+							</tr>
+							<tr> 
+								<td>sample@sample.com</td>
+								<td> 
+									<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="checkbox" type="checkbox" checked="checked"/>
+									</label>
+								</td>
+								<td> 
+									<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="checkbox" type="checkbox"/>
+									</label>
+								</td>
+								<td> 
+									<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="checkbox" type="checkbox" checked="checked"/>
+									</label>
+								</td>
+								<td> 
+									<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="checkbox" type="checkbox"/>
+									</label>
+								</td>
+								<td> 
+									<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="checkbox" type="checkbox"/>
+									</label>
+								</td>
+								<td> 
+									<svg class="icon icon-close ">
+										<use xlink:href="img/svg/sprite.svg#close"></use>
+									</svg>
+								</td>
+							</tr>
+							<tr> 
+								<td>sample@sample.com</td>
+								<td> 
+									<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="checkbox" type="checkbox" checked="checked"/>
+									</label>
+								</td>
+								<td> 
+									<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="checkbox" type="checkbox"/>
+									</label>
+								</td>
+								<td> 
+									<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="checkbox" type="checkbox" checked="checked"/>
+									</label>
+								</td>
+								<td> 
+									<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="checkbox" type="checkbox"/>
+									</label>
+								</td>
+								<td> 
+									<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="checkbox" type="checkbox"/>
+									</label>
+								</td>
+								<td> 
+									<svg class="icon icon-close ">
+										<use xlink:href="img/svg/sprite.svg#close"></use>
+									</svg>
+								</td>
+							</tr>
+							<tr> 
+								<td>sample@sample.com</td>
+								<td> 
+									<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="checkbox" type="checkbox" checked="checked"/>
+									</label>
+								</td>
+								<td> 
+									<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="checkbox" type="checkbox"/>
+									</label>
+								</td>
+								<td> 
+									<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="checkbox" type="checkbox" checked="checked"/>
+									</label>
+								</td>
+								<td> 
+									<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="checkbox" type="checkbox"/>
+									</label>
+								</td>
+								<td> 
+									<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="checkbox" type="checkbox"/>
+									</label>
+								</td>
+								<td> 
+									<svg class="icon icon-close ">
+										<use xlink:href="img/svg/sprite.svg#close"></use>
+									</svg>
+								</td>
+							</tr>
+							<tr> 
+								<td>sample@sample.com</td>
+								<td> 
+									<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="checkbox" type="checkbox" checked="checked"/>
+									</label>
+								</td>
+								<td> 
+									<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="checkbox" type="checkbox"/>
+									</label>
+								</td>
+								<td> 
+									<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="checkbox" type="checkbox" checked="checked"/>
+									</label>
+								</td>
+								<td> 
+									<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="checkbox" type="checkbox"/>
+									</label>
+								</td>
+								<td> 
+									<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="checkbox" type="checkbox"/>
+									</label>
+								</td>
+								<td> 
+									<svg class="icon icon-close ">
+										<use xlink:href="img/svg/sprite.svg#close"></use>
+									</svg>
+								</td>
+							</tr>
+							<tr> 
+								<td>sample@sample.com</td>
+								<td> 
+									<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="checkbox" type="checkbox" checked="checked"/>
+									</label>
+								</td>
+								<td> 
+									<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="checkbox" type="checkbox"/>
+									</label>
+								</td>
+								<td> 
+									<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="checkbox" type="checkbox" checked="checked"/>
+									</label>
+								</td>
+								<td> 
+									<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="checkbox" type="checkbox"/>
+									</label>
+								</td>
+								<td> 
+									<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="checkbox" type="checkbox"/>
+									</label>
+								</td>
+								<td> 
+									<svg class="icon icon-close ">
+										<use xlink:href="img/svg/sprite.svg#close"></use>
+									</svg>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<!-- end sSettings-->
+			</main>
+		</div>
+		<script src="libs/loading-attribute-polyfill/loading-attribute-polyfill.min.js"></script>
+		<!-- modal libs-->
+		<!-- modal libs-->
+		<!-- slider libs-->
+		<!-- /slider libs-->
+		<script src="js/common.js"></script>
+	</body>
+</html>

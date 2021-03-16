@@ -46,8 +46,33 @@
 
 			}
 		}
+		.row.g-1{
+			align-items: center;
+		}
 		&__count{
 			margin-right: rem(7);
+		}
+		&__btn-setting{
+			display: grid;
+			place-items: center;
+			@extend .btn;
+			border-left-color: #d9dada;
+			&:hover,
+			&.active{
+				background-color: $primary;
+				border-color: $primary;
+				color: #fff;
+			}
+			color: #000;
+			// @extend .btn-primary;
+			padding: 0;
+			border-radius: 0;
+			// height: 100%;
+			max-width: rem(72);
+			min-width: 1px;
+			.icon{
+				font-size: rem(24);
+			}
 		}
 	@include media-breakpoint-up(xl) {}
 	@include media-breakpoint-up(lg) {}

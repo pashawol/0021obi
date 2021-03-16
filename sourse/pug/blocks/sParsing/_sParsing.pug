@@ -13,6 +13,7 @@ mixin sParsing(data)
 					button.btn.btn-primary.mt-4 Начать
 				.col-6
 					.strong.mb-2 Выберите магазины
+					+in-c("checkbox",'Выбрать все')(checked)
 					.row
 						mixin ch(t)
 							.col-6

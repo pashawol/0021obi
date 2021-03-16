@@ -1,0 +1,78 @@
+
+	// start .sSettings
+	.sSettings {
+			padding-top: rem(24);
+		// --sPT: ;
+		// --sPB: ;
+		// --sTPB: ;
+		table{
+			width: 100%;
+			border-top: 1px solid #D9DADA;
+			border-bottom: 1px solid #D9DADA;
+			th{
+				border-bottom: 1px solid #D9DADA;
+				font-size: rem(12);
+				font-weight: normal;
+			}
+		}
+		tr{vertical-align: top;}
+		tbody{
+			tr:hover td{
+				 background-color: $orange-100;
+			}
+		}
+		td{
+			@include mt;
+		}
+		td,
+		th{
+			text-align: center;
+			vertical-align: top;
+			// vertical-align: middle;
+			
+			&:not(:last-child){
+				border-right: 1px solid #D9DADA;
+	
+			}
+			&:first-child{
+				text-align: start;
+				padding-left: rem(32);
+			}
+			.custom-input{
+				display: inline-block;
+				width: auto;
+				padding: 0;
+				margin: 0;
+				min-height: 1px;
+				height: 1rem;
+				cursor: pointer;
+				&__input{
+					margin-right: 0;
+					float: none;
+					margin: 0;
+					// margin-left: 0;
+				}
+			}
+		}
+		td{
+			padding-top: rem(14);
+			padding-bottom: rem(14);
+		}
+		.icon-close{
+			cursor: pointer;
+			stroke: currentColor;
+			stroke-width: 2px;
+			font-size: 12px;
+		}
+		 
+	@include media-breakpoint-up(xl) {}
+	@include media-breakpoint-up(lg) {}
+	@include media-breakpoint-up(md) {}
+	@include media-breakpoint-up(sm) {}
+	//
+	@include media-breakpoint-between(md, xl) { }
+	//
+	@include media-breakpoint-only(xl) {}
+	//
+	@include media-breakpoint-down(xl) {}
+} // end.sSettings
