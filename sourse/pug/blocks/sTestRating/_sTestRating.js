@@ -5,7 +5,7 @@ let sTestRatingVue = new Vue({
 		},
 		methods: { 
 		},
-		 created: function () { 
+		created: function () { 
 		},
 		computed: {
 		

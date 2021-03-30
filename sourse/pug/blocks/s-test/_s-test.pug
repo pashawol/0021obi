@@ -1,9 +1,35 @@
 mixin s-test()
 	// start s-test
-	+b.SECTION.s-test.section#s-test&attributes(attributes)
-		.container
-			+b.section-title.text-center
-				h2 s-test
-				
-			.row
+	+b.s-test&attributes(attributes)
+		.container-fluid
+			.strong.mb-4 Запущенные проверки
+			table
+				mixin tr(i, t)
+					tr
+						td 
+							button.btn-table.btn-table--primary
+								+icon(`${i}`)
+						td.w-80!= t
+						td
+							block
+				+tr(`play`, `Проверка Akeno`)
+					button.btn-table.btn-table--dark
+						+icon('cross')
+						| Остановить
+				+tr(`play`, `Проверка PR, PPR`)
+					button.btn-table.btn-table--dark
+						+icon('cross')
+						| Остановить
+				+tr(`play`, `Проверка future PPR`)
+					button.btn-table.btn-table--dark
+						+icon('cross')
+						| Остановить
+				+tr(`play`, `Проверка Web Shop RP`)
+					button.btn-table.btn-table--dark
+						+icon('cross')
+						| Остановить
+				+tr(`pause`, `Проверка Picture Pool`)
+					button.btn-table.btn-table--primary
+						+icon('play')
+						| Возобновить
 	// end s-test

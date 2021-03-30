@@ -483,3 +483,21 @@ iframe {
 .btn-outline-primary{
 	color: $body-color;
 }
+
+.daterange {
+	font-weight: bold;
+	line-height: 115%;
+	letter-spacing: -0.03em;
+	color: $primary;
+	border: none;
+	cursor: pointer;
+	padding-left: rem(30);
+	padding-right: rem(15);
+	background-image: url(../img/svg/calendar-primary.svg), url(../img/svg/chevron-down-primary.svg);
+	background-repeat: no-repeat;
+	background-position: left center, right center;
+	width: 13.6rem;
+	&:focus {
+		outline: none;
+	}
+}

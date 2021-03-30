@@ -48,3 +48,72 @@ mixin sParsing(data)
 						+ch("005 OBI Kosmonavtov  ")
 						+ch("007 OBI Pulkovskoe  ")
 	// end sParsing
+
+mixin sParsing2(data)
+	// start sParsing
+	+b.sParsing&attributes(attributes)
+		.container-fluid
+			.row
+				.col-6
+					.strong.mb-2 Укажите SKU товаров через запятую
+					+input("",'textarea')
+					button.btn.btn-primary Начать
+		// end sParsing
+
+mixin sParsing3(data)
+	// start sParsing
+	+b.sParsing&attributes(attributes)
+		.container-fluid
+			.row
+				.col-6
+					.strong.mb-2 Выберите файл для загрузки
+					+b.add-file
+						.row
+							.col-6
+								label
+									+e.INPUT.input(name='file', type='file')
+									+e.SPAN.btn + Выбрать файл
+								button.btn.btn-primary Начать
+				.col-6
+					.row
+						.col-auto
+							+in-c("checkbox", "За период")(checked)
+						.col-auto
+							+in-c("checkbox", "Ручная проверка")
+					if block
+						block
+					.strong.mb-3 Выберите магазины
+					+in-c("checkbox",'Выбрать все')(checked)
+					.row
+						mixin ch(t)
+							.col-6
+								+in-c("checkbox",t)
+						+ch("ОБИ Филион")
+						+ch("ОБИ Ходынское Поле ")
+						+ch("ОБИ Варшавское  ")
+						+ch("ОБИ Боровское  ")
+						+ch("ОБИ Белая Дача  ")
+						+ch("ОБИ Теплый Стан  ")
+						+ch("ОБИ Новая Рига ")
+						+ch("ОБИ Митино  ")
+						+ch("ОБИ Химки")
+						+ch("ОБИ Литвиново")
+						+ch("OBI Fedyakovo ")
+						+ch("OBI Metallurgov")
+						+ch("014 OBI Dybenko  ")
+						+ch("015 OBI Parnas  ")
+						+ch("017 OBI Rodionova")
+						+ch("019 OBI Karnaval ")
+						+ch("023 OBI Volgograd")
+						+ch("029 OBI Omsk")
+						+ch("030 OBI Krasnodar")
+						+ch("033 OBI Ryazan ")
+						+ch("034 OBI Saratov ")
+						+ch("036 OBI Surgut ")
+						+ch("042 OBI Bryansk ")
+						+ch("043 OBI Tula ")
+						+ch("044 OBI Volzhsky  ")
+						+ch("008 OBI Kazan  ")
+						+ch("005 OBI Kosmonavtov  ")
+						+ch("007 OBI Pulkovskoe  ")
+	// end sParsing
